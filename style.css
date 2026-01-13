@@ -1,0 +1,43 @@
+:root {
+    --primary: #2c3e50;
+    --accent: #e74c3c;
+    --light: #ecf0f1;
+}
+
+body { font-family: 'Arial', sans-serif; background: var(--light); margin: 0; }
+.container { width: 90%; max-width: 800px; margin: auto; }
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.grid-nominal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.item {
+    padding: 15px;
+    border: 2px solid #ddd;
+    background: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.item:hover { border-color: var(--accent); color: var(--accent); }
+
+.btn-checkout {
+    width: 100%;
+    padding: 15px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
